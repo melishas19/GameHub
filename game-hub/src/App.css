@@ -1,3 +1,183 @@
+@import "https://fonts.googleapis.com/css?family=Athiti";
+body{
+  display:flex;
+  justify-content: center;
+  padding: 0;
+  margin:0;
+  font-family: Athiti;
+  height: 100vh;
+}
+#App{
+  width: 80%;
+  background-color: #0b1016ed;
+  box-shadow: 1px 1px 70px #27413e;
+  
+}
+
+/*-------nav bar---------*/
+nav{
+  height: 50px;
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin:0;
+}
+
+nav ul li{
+  list-style:none;
+}
+
+.GameLibrary{
+  font-weight: bold;
+  font-size: large;
+  color: white;
+}
+
+/*-----------------------*/
+
+/*----------container-------------*/
+#container{
+  height: 250px;
+}
+#slider-button-right{
+  position: absolute;
+  margin-top: 100px;
+  right: 11%;
+}
+#slider-button-left{
+  position: absolute;
+  margin-top: 100px;
+  left: 11%;
+}
+.slider-button{
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  border:none;
+  opacity: 60%;
+  cursor: pointer;
+}
+.slider-button:hover{
+  opacity: 100%;
+}
+.fa-arrow-right, .fa-arrow-left{
+  font-size:large;
+  color: black;
+}
+
+
+.fav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height:60px;
+}
+.fa-heart{
+  font-size:x-large;
+  opacity: 70%;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+.fa-heart:hover{
+  transform: scale(1.1);
+  color: red;
+}
+.heart-red{
+  color: red;
+}
+.heart-white{
+  color: white;
+}
+
+
+.website{
+  border:none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #7bc7a7;
+  background-color: white;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+.website:hover{
+  transform: scale(0.98);
+  background-color: #7bc7a7;
+  color: white;
+  box-shadow: 1px 1px 10px cyan;
+}
+
+
+#top-games{
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  overscroll-behavior-inline: contain;
+  scroll-behavior: smooth;
+  
+}
+.snaps-inline{
+  scroll-snap-type: inline mandatory;
+}
+.snaps-inline > * {
+  scroll-snap-align: start;
+}
+#each-game{
+  display: flex;
+  flex-direction: row;
+  margin:5px;
+  background-repeat: no-repeat;
+  color: white;
+  background-image: linear-gradient( rgb(77 45 101 / 50%), rgb(66 68 127 / 50%) );
+  background-size: 100% 250px;
+}
+.arrange-each-game{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 40vw;
+  max-width: 300px;
+  padding: 30px 15px;
+}
+.each-game-img{
+  height: 280px;
+  width: auto;
+  margin: 20px;
+  transition: all .2s ease-in-out;
+  box-shadow: 1px 1px 10px #27413e;
+}
+.each-game-img:hover{
+  transform: scale(1.03);
+  box-shadow: 1px 1px 20px #27413e;
+}
+
+
+.test{
+  display: flex;
+  flex-direction: row;
+}
+.name{
+  font-weight: bold;
+  font-size: large;
+}
+.company{
+  margin-bottom: 15px;
+}
+
+
+/* ----------------------------- */
+
+
+
+/* ---------default css--------- */
+/**
 .App {
   text-align: center;
 }
@@ -36,3 +216,4 @@
     transform: rotate(360deg);
   }
 }
+**/
