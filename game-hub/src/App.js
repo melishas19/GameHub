@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import $ from 'jquery';
 
 function GameApp(){
   const [gamesList, setgamesList] = React.useState([
@@ -36,7 +37,7 @@ function GameApp(){
    "Company": "Infinity Ward and Activision",
    "Name": "Call of Duty: Modern Warfare II",
    "Image": "https://m.media-amazon.com/images/M/MV5BMjZjODM2MDMtMGE2ZS00NWIyLTkzOWMtYjY0YTM3MzQ0ZjMzXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg",
-    "About": "A first person shooter, and its gameplay revolves around fast-paced gunfights against enemy combatants.",
+    "About": "A first person shooter, and it revolves around fast-paced gunfights against enemy combatants.",
    "Favorite":false
   },
  ]);
@@ -44,11 +45,24 @@ function GameApp(){
   
   function slidingRight(){
     var scroll=document.getElementById("top-games");
-    scroll.scrollLeft += 500;
+    var maxwidth = $(window).width();
+    console.log(maxwidth);
+    if (maxwidth <= 440){
+      scroll.scrollLeft += 320;
+    }
+    else {
+      scroll.scrollLeft += 500;
+    }
   }
   function slidingLeft(){
     var scroll=document.getElementById("top-games");
-    scroll.scrollLeft -= 500;
+    var maxwidth = $(window).width();
+    if (maxwidth <= 440){
+      scroll.scrollLeft -= 320;
+    }
+    else {
+      scroll.scrollLeft -= 500;
+    }
   }
   
   
