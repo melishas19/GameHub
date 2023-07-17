@@ -5,7 +5,6 @@ body{
   padding: 0;
   margin:0;
   font-family: Athiti;
-  height: 100vh;
 }
 #App{
   width: 80%;
@@ -173,6 +172,75 @@ nav ul li{
 
 
 /* ----------------------------- */
+
+/*---------container 2 div-icons----------*/
+
+#container2{
+  margin-top: 150px;
+  display: flex; 
+  flex-direction: row;
+}
+#icons{
+  display:flex;
+  flex-direction: column;
+  margin: 10px;
+  position: sticky;
+  height: fit-content;
+  top: 20px;
+}
+.each-icon{
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  width:fit-content;
+  box-shadow: inset 0px 0px 5px #000000;
+  cursor:pointer;
+  background-color: #3c4d9b69;
+}
+.active{
+  box-shadow: inset 3px 3px 10px 3px #000000;
+  filter: brightness(60%);
+}
+.riot{
+  width: 30px;
+  height:auto;
+}
+.blizzard{
+  width: 30px;
+  height:auto;
+}
+.epic{
+  width: 30px;
+  height:auto;
+}
+.ea{
+  width: 30px;
+  height:auto;
+}
+.activision{
+  width: 30px;
+  height:30px;
+  background-color: white;
+  border-radius: 50%;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+.mojang{
+  width: 30px;
+  height:auto;
+}
+.all-icon{
+  color: white;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  width:40px;
+  height:40px;
+}
+
+/*------------------------------*/
+
 
 /* --------responsiveness--------- */
 @media only screen and (max-width: 730px) {
