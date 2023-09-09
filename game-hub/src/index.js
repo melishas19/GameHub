@@ -2,12 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import GameApp from './App';
+import MoreGames from './BotApp';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('container'));
 root.render(
   <React.StrictMode>
     <GameApp />
+  </React.StrictMode>
+);
+const root2 = ReactDOM.createRoot(document.getElementById('other-games'));
+root2.render(
+  <React.StrictMode>
+    <MoreGames />
   </React.StrictMode>
 );
 
